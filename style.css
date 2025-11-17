@@ -9,6 +9,12 @@
 }
 
 .screen {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
     margin: 55px auto 20px;
     height: 90px;
     width:  360px;
