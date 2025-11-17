@@ -1,3 +1,15 @@
+
+let currentDisplayValue = 0;
+
+const screen = document.querySelector(".screen");
+const digits = document.querySelectorAll(".digit");
+
+digits.forEach(button => {
+    button.addEventListener('click',() => {
+        screen.textContent += button.dataset.value;
+    });
+});
+
 function add(num1,num2)
 {
     return num1 + num2;
