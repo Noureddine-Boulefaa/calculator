@@ -1,5 +1,5 @@
+/* Main calculator container */
 .border{
-    
     width: 400px;
     height: 550px;
     background-color: black;
@@ -8,19 +8,28 @@
     padding-top: 15px;
 }
 
+/* Display screen */
 .screen {
     display: flex;
-    text-align: right;
-    justify-content: flex-end;
+    justify-content: flex-end;  /* Align numbers to the right */
     align-items: center;
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 55px auto 20px;
+
+    width: 360px;
     height: 90px;
-    width:  360px;
+
+    margin: 55px auto 20px;
+    padding: 10px;
+
     background-color: rgb(155, 151, 109);
+    font-weight: bold;
+
+    overflow: hidden;       /* Prevent text from overflowing */
+    white-space: nowrap;    /* Keep text on one line */
+    font-size: 48px;        /* Initial font size for auto-resize */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
+/* Buttons container */
 .buttons{
     display: flex;
     justify-content: space-evenly;
@@ -33,6 +42,8 @@
     background-color: darkgray;
     border-radius: 12px;
 }
+
+/* Individual button styling */
 .buttons div{
     display: inline-block;
     width: 80px;
@@ -44,5 +55,4 @@
     background-color: blanchedalmond;
     font-size: 24px;
     cursor: pointer;
-    
 }
